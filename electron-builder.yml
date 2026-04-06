@@ -1,0 +1,37 @@
+appId: com.netmonitor.app
+productName: NetMonitor
+directories:
+  output: release
+  buildResources: resources
+
+files:
+  - dist/**/*
+  - "!dist/package.json"
+
+extraResources:
+  - from: resources/backend-server.exe
+    to: backend-server.exe
+
+win:
+  target:
+    - target: dir
+      arch:
+        - x64
+  icon: resources/icon.ico
+  requestedExecutionLevel: asInvoker
+  signAndEditExecutable: false
+  forceCodeSigning: false
+
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+  shortcutName: NetMonitor
+  installerIcon: resources/installer.ico
+  uninstallerIcon: resources/uninstaller.ico
+  installerHeaderIcon: resources/icon.ico
+  perMachine: false
+  allowElevation: true
+
+artifactName: NetMonitor-${version}-${arch}.${ext}

@@ -1,0 +1,96 @@
+/* 引入 Google Fonts: Rubik */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap');
+
+:root {
+  /* 颜色变量 */
+  --bg-primary: #1f1633;
+  --bg-deep: #150f23;
+  --sentry-purple: #6a5fc1;
+  --assyrian: #79628c;
+  --deep-violet: #422082;
+  --lime: #c2ef4e;
+  --coral: #ffb287;
+  --pink: #fa7faa;
+  --text-primary: #ffffff;
+  --text-secondary: #e5e7eb;
+  --text-dim: #8b8fa3;
+  --border: #362d59;
+  --border-light: #584674;
+  --glass-white: rgba(255, 255, 255, 0.18);
+  --glass-deep: rgba(54, 22, 107, 0.14);
+  --error: #ff5252;
+  --success: #c2ef4e;
+  --warning: #ffb287;
+  
+  /* 排版 */
+  --font-family: Rubik, -apple-system, system-ui, 'Segoe UI', Helvetica, Arial, sans-serif;
+  --font-family-display: 'Dammit Sans', Rubik, sans-serif;
+  --font-family-mono: Monaco, Menlo, 'Ubuntu Mono', monospace;
+  
+  /* 圆角 */
+  --radius-xs: 6px;
+  --radius-sm: 8px;
+  --radius-md: 10px;
+  --radius-lg: 12px;
+  --radius-pill: 13px;
+  
+  /* 阴影 */
+  --shadow-sunken: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px inset;
+  --shadow-surface: rgba(0, 0, 0, 0.08) 0px 2px 8px;
+  --shadow-elevated: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px;
+  --shadow-prominent: rgba(0, 0, 0, 0.18) 0px 0.5rem 1.5rem;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: var(--font-family);
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* 全局滚动条 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-deep);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border-light);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--sentry-purple);
+}
+
+/* 全局选择 */
+::selection {
+  background: rgba(106, 95, 193, 0.3);
+  color: #ffffff;
+}
+
+/* 全局链接 */
+a {
+  color: var(--sentry-purple);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--text-primary);
+  text-decoration: underline;
+}

@@ -1,0 +1,10 @@
+{
+  "name": "netmonitor",
+  "version": "0.1.0",
+  "description": "Windows 桌面网络流量监控工具",
+  "main": "dist/electron/main.js",
+  "type": "commonjs",
+  "dependencies": {
+    "electron-is-dev": "^3.0.1"
+  }
+}

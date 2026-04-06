@@ -1,0 +1,10 @@
+{
+  "interface": "",
+  "bpf_filter": "",
+  "promisc_mode": true,
+  "snaplen": 65536,
+  "database_path": "netmonitor.db",
+  "retention_hours": 720,
+  "api_port": 8080,
+  "theme": "light"
+}
